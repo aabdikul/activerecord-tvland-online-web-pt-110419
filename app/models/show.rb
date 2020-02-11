@@ -7,7 +7,7 @@ class Show < ActiveRecord::Base
     self.actors.each do |object|
       array << object.first_name + object.last_name
     end
-    array
+    array.join(" ")
   end
 
 end
