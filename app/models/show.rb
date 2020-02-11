@@ -3,8 +3,9 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
 
   def actors_list
+    array = []
     self.actors.each do |object|
-      object.first_name + object.last_name
+      array << object.first_name + object.last_name
     end
   end
 
