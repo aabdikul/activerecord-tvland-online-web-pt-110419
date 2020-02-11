@@ -10,4 +10,7 @@ class Show < ActiveRecord::Base
     array
   end
 
+  def self.build_network()
+  end
+
 end
