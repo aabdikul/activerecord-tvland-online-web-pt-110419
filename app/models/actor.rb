@@ -12,10 +12,9 @@ class Actor < ActiveRecord::Base
       array << object.name
     end
     self.shows.each do |object|
-      array <<object.name
+      array << object.name
     end
-    array
-    binding.pry
+    array.flatten
   end
 
 end
