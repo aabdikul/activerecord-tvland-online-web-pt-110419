@@ -10,7 +10,6 @@ class Actor < ActiveRecord::Base
     self.characters.each do |object|
       object.name
     end
-    binding.pry
   end
 
 end
