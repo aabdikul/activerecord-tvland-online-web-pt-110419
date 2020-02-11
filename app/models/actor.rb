@@ -14,7 +14,7 @@ class Actor < ActiveRecord::Base
     self.shows.each do |object|
       array << object.name
     end
-    array
+    array.join(" - ")
     binding.pry
   end
 
