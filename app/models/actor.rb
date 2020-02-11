@@ -15,6 +15,7 @@ class Actor < ActiveRecord::Base
       array << object.name
     end
     array.flatten
+    binding.pry
   end
 
 end
