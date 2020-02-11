@@ -14,6 +14,7 @@ class Actor < ActiveRecord::Base
     self.shows.each do |object|
       array <<object.name
     end
+    array
   end
 
 end
