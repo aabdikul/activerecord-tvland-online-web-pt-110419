@@ -4,6 +4,7 @@ class Show < ActiveRecord::Base
 
   def actors_list
     self.actor
+    binding.pry
   end
 
 end
