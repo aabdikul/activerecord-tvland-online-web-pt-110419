@@ -11,9 +11,8 @@ class Actor < ActiveRecord::Base
       object.name
     end
     self.shows.each do |object|
-      character_show = object.name
+      object.name
     end
-    character_name + "-" + character_show
   end
 
 end
