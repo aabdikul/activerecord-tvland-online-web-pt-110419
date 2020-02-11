@@ -10,7 +10,7 @@ class Actor < ActiveRecord::Base
   #  person = self.characters.each do |object|
   #    object.name
   #  end
-    show = self.shows.each do |object|
+    self.shows.each do |object|
       object.name
     end
   end
