@@ -7,12 +7,13 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    self.characters.each do |object|
+    person = self.characters.each do |object|
       object.name
     end
-    self.shows.each do |object|
+    show = self.shows.each do |object|
       object.name
     end
+      person + show
   end
 
 end
