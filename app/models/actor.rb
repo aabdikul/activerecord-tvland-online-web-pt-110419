@@ -13,7 +13,7 @@ class Actor < ActiveRecord::Base
     show = self.shows.each do |object|
       object.name
     end
-      person + show
+      return person + "-" show
   end
 
 end
